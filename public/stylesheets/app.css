@@ -1,0 +1,110 @@
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-sign {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    margin-bottom: 17px;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.user-sign a {
+    font-size: 16px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.user-info form {
+    margin: 0;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.user-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-controls input {
+    border: none;
+    background-color: white;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0;
+    color: #2ba6cb;
+    cursor: pointer;
+}
+
+.register {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.register-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.filter-container label {
+    margin-bottom: 0;
+}
