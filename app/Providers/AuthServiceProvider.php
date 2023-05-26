@@ -41,7 +41,8 @@ class AuthServiceProvider extends ServiceProvider
                 && $course->getFreeAmount() !== 0
                 && in_array($course->id, array_map(function ($x) {
                     return $x['id'];
-                }, $user->courses()->get()->toArray())) === false;
+                }, $user->courses()->get()->toArray())) === false
+                && Gate::allows('user');
         });
 
         Gate::define('cancelSubscribe', function (User $user, Course $course) {

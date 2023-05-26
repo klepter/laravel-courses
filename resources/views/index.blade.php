@@ -90,7 +90,7 @@
         window.onload = () => {
             const filters = document.querySelector('.filter-container').getElementsByTagName('input');
             const filterForm = document.querySelector('#filter-form');
-            for(let filter of filters) {
+            for (let filter of filters) {
                 filter.addEventListener('change', () => filterForm.submit());
             }
         }

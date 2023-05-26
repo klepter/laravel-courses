@@ -10,7 +10,7 @@ Route::get('/', [IndexController::class, 'index']);
 Route::get('/courses/{course_code}', [IndexController::class, 'courses']);
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/admin', [AdminController::class, 'showAdminPanel']);
+    Route::get('/admin', [AdminController::class, 'showAdminPanel'])->name('admin.panel');
 
     Route::get('/admin/course/{id}/users', [AdminController::class, 'showCourseUsers'])->name('course.users');
     Route::post('/admin/{course_id}/{user_id}/cancelsubscribe', [AdminController::class, 'cancelSubscribe']);
@@ -27,7 +27,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/course/{id}/subscribe', [CourseController::class, 'subscribe']);
     Route::get('/course/{id}/subscribecancel', [CourseController::class, 'cancelSubscribe']);
-    Route::get('/user/courses', [CourseController::class, 'userCourses']);
+    Route::get('/user/courses', [CourseController::class, 'userCourses'])->name('user.courses');
 });
 
 Route::middleware('auth')->group(function () {
